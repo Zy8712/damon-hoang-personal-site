@@ -1,0 +1,116 @@
+import React from "react";
+import { RiAdminLine } from "react-icons/ri";
+import { BsCupHot } from "react-icons/bs";
+import { CiCoffeeCup } from "react-icons/ci";
+
+export const links = [
+  {
+    name: "Home",
+    hash: "#home",
+  },
+  {
+    name: "About",
+    hash: "#about",
+  },
+  {
+    name: "Experience",
+    hash: "#experience",
+  },
+  {
+    name: "Education",
+    hash: "#education",
+  },
+  {
+    name: "Skills",
+    hash: "#skills",
+  },
+  {
+    name: "Contact",
+    hash: "#contact",
+  },
+] as const;
+
+export const experiencesData = [
+  {
+    title: "Administrative Assistant",
+    location: "Tzu Chi Academy | Toronto, ON",
+    description:
+      "Established interpersonal relationship skills from parental relationship management. Developed my leadership and management skills by resolving conflicts and navigating students through assigned tasks. De-escalated conflicts to minimize and limit workflow disruption.",
+    icon: React.createElement(RiAdminLine),
+    date: "Sep 2015 - Apr 2018",
+  },
+  {
+    title: "Customer Service Representative",
+    location: "Eco-Cha Teas | Nantou, Taiwan",
+    description:
+      "Forward-facing role responsible for customer interaction and promoting Eco-Cha products. Built connections with potential customers through effective communication using code-switching between English and Mandarin. Adapted to impromptu customer interaction with active listening and provided relevant information to explain Eco-Cha’s products effectively.",
+    icon: React.createElement(BsCupHot),
+    date: "2017",
+  },
+  {
+    title: "Customer Service Representative",
+    location: "P Café | Tamsui District, New Taipei City, Taiwan",
+    description:
+      "Greeted and served customers in a fast-paced café environment with professionalism, accurately processed orders and payments for dine-in and takeaway, provided product recommendations, maintained cleanliness and organization of the workspace, collaborated with team members for smooth operations, and promptly resolved customer concerns to ensure high service quality.",
+    icon: React.createElement(CiCoffeeCup),
+    date: "Nov 2022 - Mar 2023",
+  },
+] as const;
+
+export const educationData = [
+  {
+    title: "Bachelors of Communications and Media Studies",
+    location: "University of Toronto | Mississauga, ON",
+    description: "",
+    icon: React.createElement(RiAdminLine),
+    date: "Sep 2018 - Aug 2022",
+  },
+  {
+    title: "Certificate in Digital Communication",
+    location: "Sheridan College | Toronto, ON",
+    description: "",
+    icon: React.createElement(BsCupHot),
+    date: "2020 - 2022",
+  }
+] as const;
+
+
+export const skillsData = [
+  "Customer Support",
+  "Customer Service",
+  "Customer Interaction",
+  "Negotiation",
+  "Retail",
+  "Sales",
+  "Rhetoric",
+  "Communication",
+  "Research",
+  "Documentation",
+  "Visual Rhetoric",
+  "Discourse Analysis",
+  "User Personas",
+  "Security Awareness",
+  "Privacy Protection",
+  "Information Security Awareness",
+  "Strategic Thinking",
+  "Virtual Office",
+  "Telecommuting",
+  "Time Management",
+  "Virtual Work",
+  "Team Management",
+  "Generational Differences",
+  "Project Resourcing",
+  "Project Team Management",
+  "Project Management",
+  "Delegation",
+  "Team Leadership",
+  "Economics",
+  "Administrative Processes",
+  "Administrative Assistance",
+  "Organization Skills",
+  "Self-confidence",
+  "Agile Project Management",
+  "Agile Methodologies",
+  "Digital Marketing",
+  "Leadership",
+] as const;
