@@ -2,6 +2,9 @@ import React from "react";
 import { RiAdminLine } from "react-icons/ri";
 import { BsCupHot } from "react-icons/bs";
 import { CiCoffeeCup } from "react-icons/ci";
+import { FaGraduationCap } from "react-icons/fa";
+import { PiCertificateBold } from "react-icons/pi";
+
 
 export const links = [
   {
@@ -61,15 +64,15 @@ export const educationData = [
   {
     title: "Bachelors of Communications and Media Studies",
     location: "University of Toronto | Mississauga, ON",
-    description: "",
-    icon: React.createElement(RiAdminLine),
+    description: "Gained a strong foundation in media theory, communication strategy, and digital culture. Developed critical thinking, writing, and research skills through coursework and collaborative projects.",
+    icon: React.createElement(FaGraduationCap),
     date: "Sep 2018 - Aug 2022",
   },
   {
     title: "Certificate in Digital Communication",
     location: "Sheridan College | Toronto, ON",
-    description: "",
-    icon: React.createElement(BsCupHot),
+    description: "Completed practical training in digital storytelling, social media strategy, and content creation. Gained hands-on experience with industry tools for effective online communication and branding.",
+    icon: React.createElement(PiCertificateBold),
     date: "2020 - 2022",
   }
 ] as const;
