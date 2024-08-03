@@ -4,6 +4,7 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import Image from "next/image";
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -29,6 +30,14 @@ export default function About() {
       <p>
         Feel free to explore my work and connect with me to discuss how we can collaborate to create impactful digital experiences.
       </p>
+
+      <Image 
+        src="/about/undraw_profile_d7qw.svg"
+        alt=""
+        width={500}
+        height={500}
+        className="w-full max-w-2xl mt-12"
+      />
     </motion.section>
   );
 }

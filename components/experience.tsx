@@ -10,13 +10,14 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
+import Image from "next/image";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
   const { theme } = useTheme();
 
   return (
-    <section id="experience" ref={ref} className="mb-28 scroll-mt-28 sm:mb-40">
+    <section id="experience" ref={ref} className="mb-28 sm:mb-40 flex flex-col items-center">
       <SectionHeading>Professional Experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
@@ -53,6 +54,13 @@ export default function Experience() {
           </React.Fragment>
         ))}
       </VerticalTimeline>
+      <Image 
+        src="/experience/undraw_working_n9u0.svg"
+        alt=""
+        width={500}
+        height={500}
+        className="w-full max-w-2xl mt-12"
+      />
     </section>
   );
 }

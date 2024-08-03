@@ -41,6 +41,7 @@ export const experiencesData = [
       "Established interpersonal relationship skills from parental relationship management. Developed my leadership and management skills by resolving conflicts and navigating students through assigned tasks. De-escalated conflicts to minimize and limit workflow disruption.",
     icon: React.createElement(RiAdminLine),
     date: "Sep 2015 - Apr 2018",
+    image: "/experience/eco-cha-tea.jpg",
   },
   {
     title: "Customer Service Representative",
@@ -49,6 +50,7 @@ export const experiencesData = [
       "Forward-facing role responsible for customer interaction and promoting Eco-Cha products. Built connections with potential customers through effective communication using code-switching between English and Mandarin. Adapted to impromptu customer interaction with active listening and provided relevant information to explain Eco-Cha’s products effectively.",
     icon: React.createElement(BsCupHot),
     date: "2017",
+    image: "/experience/eco-cha-tea.jpg",
   },
   {
     title: "Customer Service Representative",
@@ -57,6 +59,7 @@ export const experiencesData = [
       "Greeted and served customers in a fast-paced café environment with professionalism, accurately processed orders and payments for dine-in and takeaway, provided product recommendations, maintained cleanliness and organization of the workspace, collaborated with team members for smooth operations, and promptly resolved customer concerns to ensure high service quality.",
     icon: React.createElement(CiCoffeeCup),
     date: "Nov 2022 - Mar 2023",
+    image: "/experience/eco-cha-tea.jpg",
   },
 ] as const;
 

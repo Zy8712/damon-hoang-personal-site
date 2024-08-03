@@ -10,13 +10,14 @@ import "react-vertical-timeline-component/style.min.css";
 import { educationData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
+import Image from "next/image";
 
 export default function Education() {
   const { ref } = useSectionInView("Education");
   const { theme } = useTheme();
 
   return (
-    <section id="education" ref={ref} className="mb-28 scroll-mt-28 sm:mb-40">
+    <section id="education" className="mb-28 scroll-mt-28 sm:mb-40 flex flex-col items-center">
       <SectionHeading>Education</SectionHeading>
       <VerticalTimeline lineColor="">
         {educationData.map((item, index) => (
@@ -53,6 +54,13 @@ export default function Education() {
           </React.Fragment>
         ))}
       </VerticalTimeline>
+      <Image 
+        src="/education/undraw_learning_qt7d.svg"
+        alt=""
+        width={500}
+        height={500}
+        className="w-full max-w-xs mt-12"
+      />
     </section>
   );
 }

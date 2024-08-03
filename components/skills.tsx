@@ -5,6 +5,7 @@ import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -47,6 +48,13 @@ export default function Skills() {
           </motion.li>
         ))}
       </ul>
+      <Image 
+        src="/skills/undraw_percentages_wi9e.svg"
+        alt=""
+        width={500}
+        height={500}
+        className="w-full max-w-2xl mt-12"
+      />
     </section>
   );
 }
