@@ -27,10 +27,11 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      ref={ref}
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
-      <SectionHeading>My skills</SectionHeading>
+      <div ref={ref}>
+        <SectionHeading>My skills</SectionHeading>
+      </div>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
@@ -48,7 +49,7 @@ export default function Skills() {
           </motion.li>
         ))}
       </ul>
-      <Image 
+      <Image
         src="/skills/undraw_percentages_wi9e.svg"
         alt=""
         width={500}

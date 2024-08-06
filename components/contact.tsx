@@ -14,7 +14,6 @@ export default function Contact() {
   return (
     <motion.section
       id="contact"
-      ref={ref}
       className="mb-20 w-[min(100%,38rem)] text-center sm:mb-28"
       initial={{
         opacity: 0,
@@ -29,7 +28,9 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Contact me</SectionHeading>
+      <div ref={ref}>
+        <SectionHeading>Contact me</SectionHeading>
+      </div>
 
       <p className="-mt-6 text-gray-700 dark:text-white/80">
         Please contact me directly at{" "}

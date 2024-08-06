@@ -11,14 +11,16 @@ export default function About() {
 
   return (
     <motion.section
-      ref={ref}
       className="mb-28 max-w-[45rem] scroll-mt-28 text-center leading-8 sm:mb-40"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>Quick Introduction</SectionHeading>
+      <div ref={ref}>
+        <SectionHeading>Quick Introduction</SectionHeading>
+      </div>
+
       <p className="mb-3">
         Welcome to my professional space! I'm Damon, a Communications and Digital Marketing Specialist with a strong foundation in crafting compelling narratives and strategies that resonate with audiences. Currently, I am pursuing my studies at the University of Toronto Mississauga, where I am honing my skills in digital communication and marketing.
       </p>
@@ -31,7 +33,7 @@ export default function About() {
         Feel free to explore my work and connect with me to discuss how we can collaborate to create impactful digital experiences.
       </p>
 
-      <Image 
+      <Image
         src="/about/undraw_profile_d7qw.svg"
         alt=""
         width={500}

@@ -18,7 +18,9 @@ export default function Education() {
 
   return (
     <section id="education" className="mb-28 scroll-mt-28 sm:mb-40 flex flex-col items-center">
-      <SectionHeading>Education</SectionHeading>
+      <div ref={ref}>
+        <SectionHeading>Education</SectionHeading>
+      </div>
       <VerticalTimeline lineColor="">
         {educationData.map((item, index) => (
           <React.Fragment key={index}>
@@ -54,7 +56,7 @@ export default function Education() {
           </React.Fragment>
         ))}
       </VerticalTimeline>
-      <Image 
+      <Image
         src="/education/undraw_learning_qt7d.svg"
         alt=""
         width={500}

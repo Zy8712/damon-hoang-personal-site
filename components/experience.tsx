@@ -17,8 +17,10 @@ export default function Experience() {
   const { theme } = useTheme();
 
   return (
-    <section id="experience" ref={ref} className="mb-28 sm:mb-40 flex flex-col items-center">
-      <SectionHeading>Professional Experience</SectionHeading>
+    <section id="experience" className="mb-28 sm:mb-40 flex flex-col items-center">
+      <div ref={ref}>
+        <SectionHeading>Professional Experience</SectionHeading>
+      </div>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
@@ -54,7 +56,7 @@ export default function Experience() {
           </React.Fragment>
         ))}
       </VerticalTimeline>
-      <Image 
+      <Image
         src="/experience/undraw_working_n9u0.svg"
         alt=""
         width={500}
