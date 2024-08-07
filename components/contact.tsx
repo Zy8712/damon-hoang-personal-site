@@ -7,6 +7,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
+import Image from "next/image";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -14,7 +15,7 @@ export default function Contact() {
   return (
     <motion.section
       id="contact"
-      className="mb-20 w-[min(100%,38rem)] text-center sm:mb-28"
+      className="mb-20 w-[min(100%,38rem)] text-center sm:mb-28 flex flex-col items-center"
       initial={{
         opacity: 0,
       }}
@@ -41,7 +42,7 @@ export default function Contact() {
       </p>
 
       <form
-        className="mt-10 flex flex-col items-center dark:text-black"
+        className="w-full mt-10 flex flex-col items-center dark:text-black"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
@@ -70,6 +71,13 @@ export default function Contact() {
         />
         <SubmitBtn />
       </form>
+      <Image
+        src="/contact/undraw_personal-text_090t.svg"
+        alt=""
+        width={500}
+        height={500}
+        className="w-full max-w-2xl mt-12"
+      />
     </motion.section>
   );
 }

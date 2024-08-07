@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
@@ -31,13 +30,13 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/default_profile_img.png"
+              src="/undraw_developer-avatar_f6ac.svg"
               alt="Damon Hoang Profile"
-              width="225"
-              height="225"
+              width="300"
+              height="300"
               quality="100"
               priority={true}
-              className="h-32 w-32 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
+              className="h-48 w-48 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
             />
           </motion.div>
 
@@ -83,7 +82,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
+          Contact Me{" "}
           <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
         </Link>
 
