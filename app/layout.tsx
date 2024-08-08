@@ -12,6 +12,32 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Damon Hoang | Personal Portfolio",
   description: "Damon is a Communications & Digital Marketing Specialist.",
+  openGraph: {
+    locale: "en_CA",
+    type: "website",
+    title: "Damon's Personal Site",
+    description: "",
+    url: "https://damon-hoang-personal-site.vercel.app/",
+    images: [
+      {
+        url: "/undraw_developer-avatar_f6ac.svg",
+        secureUrl: "/undraw_developer-avatar_f6ac.svg",
+        width: 676,
+        height: 676,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    url: "https://damon-hoang-personal-site.vercel.app/",
+    title: "Damon's Personal Site",
+    description: "",
+    image: "/undraw_developer-avatar_f6ac.svg",
+  },
+  icons: {
+    icon: "/undraw_developer-avatar_f6ac.svg",
+    type: "image/svg+xml",
+  },
 };
 
 export default function RootLayout({
