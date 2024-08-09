@@ -15,7 +15,6 @@ export default function Intro() {
 
   return (
     <section
-      ref={ref}
       id="home"
       className="mb-28 max-w-[50rem] scroll-mt-[100rem] text-center sm:mb-0"
     >
@@ -30,6 +29,7 @@ export default function Intro() {
             }}
           >
             <Image
+              ref={ref}
               src="/undraw_developer-avatar_f6ac.svg"
               alt="Damon Hoang Profile"
               width="300"
