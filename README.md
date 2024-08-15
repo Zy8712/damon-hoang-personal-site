@@ -1,7 +1,7 @@
 <div align="center">
     <img src="./public/undraw_developer-avatar_f6ac.svg" width="250px" />
     <h1>Damon Hoang Personal Website</h1>
-    <img src="https://skillicons.dev/icons?i=nextjs,react,ts,tailwind,redux,nodejs,npm,git,github,vercel,vscode,svg&theme=dark" />
+    <img src="https://skillicons.dev/icons?i=nextjs,react,ts,tailwind,nodejs,npm,git,github,vercel,vscode,svg&theme=dark" />
     <br />
     <br />
     <p>
@@ -23,3 +23,7 @@
 </div>
 <br />
 <br />
+
+
+> [!IMPORTANT]
+> This project is regularly updated to reflect changes and new additions. Data displayed on this website may potentially not be fully up to date.
