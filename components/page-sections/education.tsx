@@ -1,28 +1,28 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "./section-heading";
+import SectionHeading from "../reused-components/section-heading";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { experiencesData } from "@/lib/data";
+import { educationData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 import Image from "next/image";
 
-export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+export default function Education() {
+  const { ref } = useSectionInView("Education");
   const { theme } = useTheme();
 
   return (
-    <section id="experience" className="mb-28 sm:mb-40 flex flex-col items-center">
+    <section id="education" className="mb-28 scroll-mt-28 sm:mb-40 flex flex-col items-center">
       <div ref={ref}>
-        <SectionHeading>Professional Experience</SectionHeading>
+        <SectionHeading>Education</SectionHeading>
       </div>
       <VerticalTimeline lineColor="">
-        {experiencesData.map((item, index) => (
+        {educationData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
               contentStyle={{
@@ -57,11 +57,11 @@ export default function Experience() {
         ))}
       </VerticalTimeline>
       <Image
-        src="/experience/undraw_working_n9u0.svg"
+        src="/education/undraw_learning_qt7d.svg"
         alt=""
         width={500}
         height={500}
-        className="w-full max-w-2xl mt-12"
+        className="w-full max-w-xs mt-12"
       />
     </section>
   );
