@@ -4,7 +4,7 @@ import { BsCupHot } from "react-icons/bs";
 import { CiCoffeeCup } from "react-icons/ci";
 import { FaGraduationCap } from "react-icons/fa";
 import { PiCertificateBold } from "react-icons/pi";
-
+import { FaUniversity } from "react-icons/fa";
 
 export const links = [
   {
@@ -77,6 +77,13 @@ export const educationData = [
     description: "Completed practical training in digital storytelling, social media strategy, and content creation. Gained hands-on experience with industry tools for effective online communication and branding.",
     icon: React.createElement(PiCertificateBold),
     date: "2020 - 2022",
+  },
+  {
+    title: "Masters of Business Administration - MBA",
+    location: "Australian Institute of Business",
+    description: "Pursuing an industry-focused MBA with coursework in leadership, strategic management, finance, and innovation. Building advanced business acumen and decision-making skills to drive organizational growth and transformation.",
+    icon: React.createElement(FaUniversity),
+    date: "Sept 2023 - Apr 2025",
   }
 ] as const;
 

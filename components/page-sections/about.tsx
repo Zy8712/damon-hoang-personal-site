@@ -22,16 +22,17 @@ export default function About() {
       </div>
 
       <p className="mb-3">
-        Welcome to my professional space! I'm Damon, a Communications and Digital Marketing Specialist with a strong foundation in crafting compelling narratives and strategies that resonate with audiences. Currently, I am pursuing my studies at the University of Toronto Mississauga, where I am honing my skills in digital communication and marketing.
+        Welcome to my professional space! I'm Damon, a Communications and Digital Marketing Specialist with a strong foundation in crafting compelling narratives and strategies that resonate with audiences. I hold a Bachelor’s degree in Communications and Media Studies from the University of Toronto Mississauga, complemented by a Certificate in Digital Communication from Sheridan College.
+      </p>
+
+      <p className="mb-3">
+        Currently, I am advancing my business expertise by pursuing an MBA at the Australian Institute of Business, with a focus on leadership, strategic management, and innovation. With hands-on experience in content creation, social media management, and digital strategy, I am passionate about leveraging the power of digital platforms to build meaningful connections and drive engagement.
       </p>
 
       <p>
-        With hands-on experience in content creation, social media management, and digital strategy, I am passionate about leveraging the power of digital platforms to build meaningful connections and drive engagement. I thrive in dynamic environments and am always eager to learn and adapt to the ever-evolving digital landscape.
+        I thrive in dynamic environments and am always eager to learn and adapt to the ever-evolving digital landscape. Feel free to explore my work and connect with me to discuss how we can collaborate to create impactful digital experiences.
       </p>
 
-      <p>
-        Feel free to explore my work and connect with me to discuss how we can collaborate to create impactful digital experiences.
-      </p>
 
       <Image
         src="/about/undraw_profile_d7qw.svg"
